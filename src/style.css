@@ -33,10 +33,16 @@ main {
   box-sizing: border-box;
 }
 
-header img, main img {
-  display: none;
+.about div:last-of-type{
+  width: max-content;
+  margin: 1rem auto;
 }
 
+.about a > img, footer a > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 1rem;
+}
 
 
 /* About Me */
@@ -45,6 +51,27 @@ header img, main img {
 }
 
 /* My Work */
+.project-img img {
+  display: none;
+}
+.work article h3 {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-link {
+  float: right;
+}
+
+.project-link img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0px 0.1rem;
+}
+
 .work > div{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -71,13 +98,6 @@ header img, main img {
   letter-spacing: 0.1rem;
   font-family: Playfair Display;
   font-weight: 500;
-}
-
-.work h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
 }
 
 .about, .work {

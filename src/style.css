@@ -4,6 +4,10 @@
 /* Import Playfair Display */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+:root {
+  --bg-color: #0891B2;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -17,26 +21,92 @@ body {
 h1, h2, h3{
   font-family: Playfair Display,serif;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
 main {
-  padding: 2vh 5vw;
-}
-section:nth-of-type(2) > div{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-}
-
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-footer section {
-  max-width: 600px;
+  padding: 2vh 10vw;
+  box-sizing: border-box;
 }
 
 header img, main img {
   display: none;
+}
+
+
+
+/* About Me */
+.about > p{
+  color: #565656;
+}
+
+/* My Work */
+.work > div{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-content {
+  padding: 1rem 1rem 2rem 1rem;
+  box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.5);
+}
+.project-img {
+  min-width: 250px;
+  height: 200px;
+  position: relative;
+}
+
+.project-img span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%,-60%);
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-family: Playfair Display;
+  font-weight: 500;
+}
+
+.work h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.about, .work {
+  margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--bg-color);
+  color: white;
+  margin-top: 4rem;
+}
+
+.contact > address, .contact > address > div {
+  margin: 2rem 0rem;
+}
+
+.contact {
+  padding: 1rem 10vw;
+}
+
+footer > section > p {
+  font-size: 1.2rem;
+}
+
+
+footer img {
+  max-width: 100%;
 }

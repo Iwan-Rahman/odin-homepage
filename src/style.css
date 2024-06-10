@@ -29,8 +29,40 @@ h2 {
   font-size: 2.5rem;
 }
 main {
-  padding: 2vh 10vw;
+  padding: 2vh 8vw;
   box-sizing: border-box;
+}
+
+/* Header */
+header {
+  padding: 8vw 8vw;
+  box-sizing: border-box;
+  background: linear-gradient(145deg, var(--bg-color) 50%, white 50%);
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+header div {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  color: white;
+  min-width: min-content;
+  text-shadow: 5px 5px 10px rgb(15, 15, 15);
+  font-size: 5rem;
+}
+
+/* About Me */
+.about > p{
+  color: #565656;
 }
 
 .about div:last-of-type{
@@ -42,12 +74,6 @@ main {
   width: 2.5rem;
   height: 2.5rem;
   margin: 0 1rem;
-}
-
-
-/* About Me */
-.about > p{
-  color: #565656;
 }
 
 /* My Work */
@@ -119,7 +145,7 @@ footer {
 }
 
 .contact {
-  padding: 1rem 10vw;
+  padding: 1rem 8vw;
 }
 
 footer > section > p {

@@ -31,13 +31,13 @@ h2 {
   margin: 1rem 0rem;
 }
 main, .about {
-  padding: 2vh 8vw;
+  padding: 2vh 5vw;
 }
 
 /* Header */
 
 header {
-  padding: 8vw 8vw;
+  padding: 5vw 5vw;
   background: linear-gradient(150deg, var(--bg-color) 55%, white 55%);
 }
 
@@ -93,10 +93,14 @@ h1 {
 
 .work article h3 {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
+}
+
+article p {
+  font-size: 0.8rem;
 }
 
 .project-link {
@@ -104,24 +108,23 @@ h1 {
 }
 
 .project-link img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   margin: 0px 0.1rem;
 }
 
 .work > div{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(190.8px, 1fr));
   gap: 2rem;
 }
 
 .project-content {
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
   box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.5);
 }
 .project-img {
-  min-width: 250px;
-  height: 200px;
+  height: 150px;
   position: relative;
 }
 
@@ -131,7 +134,7 @@ h1 {
   left: 50%;
   transform: translate(-60%,-60%);
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   font-family: Playfair Display;
   font-weight: 500;
@@ -154,7 +157,7 @@ footer {
 }
 
 .contact {
-  margin-left: 8vw;
+  margin-left: 5vw;
 }
 
 footer > section > p {
@@ -200,9 +203,6 @@ address > div:last-child {
     transform: translate(-13%,0%);
   }
 
-  header section {
-  }
-
   .about {
     display: none;
   }
@@ -228,4 +228,16 @@ address > div:last-child {
   .contact address div:nth-child(2) img {
     visibility: visible;
   }
+}
+
+@media screen and (min-width: 72px) {
+  /* Footer */
+  .contact {
+    max-width: 50vw;
+  }
+
+  footer img {
+    
+  }
+
 }

@@ -230,14 +230,16 @@ address > div:last-child {
   }
 }
 
-@media screen and (min-width: 72px) {
+@media screen and (min-width: 720px) {
   /* Footer */
   .contact {
-    max-width: 50vw;
+    max-width: 40vw;
   }
 
   footer img {
-    
+    max-height: 20rem;
+    width: 45vw;
+    object-fit: cover;
   }
 
 }

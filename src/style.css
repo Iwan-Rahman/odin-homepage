@@ -198,8 +198,8 @@ address > div:last-child img {
 @media screen and (min-width: 480px) {
   /* Header */
   header div img {
-    width: 40vw;
-    height: 48vw;
+    width: 32vw;
+    height: 40vw;
   }
 
   header img {
@@ -278,8 +278,8 @@ address > div:last-child img {
     width: max-content;
     letter-spacing: 0;
     display: inline-block;
-    --x-offset: calc(20vw - 100px);
-    --y-offset: calc(48vw - 100%);
+    --x-offset: calc(16vw - 100px);
+    --y-offset: calc(40vw - 100%);
     transform: translate(var(--x-offset),var(--y-offset));
   }
 

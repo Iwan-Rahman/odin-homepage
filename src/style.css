@@ -31,13 +31,13 @@ h2 {
   margin: 1rem 0rem;
 }
 main, .about {
-  padding: 2vh 5vw;
+  padding: 2vh 8vw;
 }
 
 /* Header */
 
 header {
-  padding: 5vw 5vw;
+  padding: 8vw 8vw;
   background: linear-gradient(150deg, var(--bg-color) 55%, white 55%);
 }
 
@@ -99,10 +99,6 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-article p {
-  font-size: 0.8rem;
-}
-
 .project-link {
   float: right;
 }
@@ -115,16 +111,18 @@ article p {
 
 .work > div{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190.8px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(190.2px, 1fr));
   gap: 2rem;
 }
 
 .project-content {
-  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  padding: 1rem 1rem 2rem 1rem;
   box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.5);
+  font-size: 0.8rem;
 }
 .project-img {
-  height: 150px;
+  min-width: 190.2px;
+  height: 200px;
   position: relative;
 }
 
@@ -148,20 +146,16 @@ footer {
   background-color: var(--bg-color);
   color: white;
   margin-top: 4rem;
-  gap: 2rem;
   align-items: start;
 }
 
 .contact > address > div {
   margin: 2rem 0rem;
-}
-
-.contact {
-  margin-left: 5vw;
+  font-size: 0.8rem;
 }
 
 footer > section > p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   max-width: 80vw;
 }
 
@@ -185,6 +179,10 @@ address > div:last-child {
   margin: 1rem auto;
 }
 
+address > div:last-child img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
 @media screen and (min-width: 480px) {
   /* Header */
@@ -207,15 +205,21 @@ address > div:last-child {
     display: none;
   }
 
+    .work h2 {
+      text-align: start;
+    }
+
   /* Footer */
+  footer {
+    padding: 1rem 0rem;
+  }
   footer h2 {
+    margin-top: 0;
     text-align: start;
   }
   
   .contact {
     width: 50vw;
-    padding: 2rem 0rem;
-    box-sizing: border-box;
   }
 
   footer img {
@@ -226,20 +230,18 @@ address > div:last-child {
   }
 
   .contact address div:nth-child(2) img {
-    visibility: visible;
+    display: inline-block;
+    margin-right: 0.1rem;
   }
 }
 
 @media screen and (min-width: 720px) {
-  /* Footer */
   .contact {
-    max-width: 40vw;
+    width: 32vw;
   }
 
   footer img {
-    max-height: 20rem;
     width: 45vw;
-    object-fit: cover;
+    max-height: 18rem;
   }
-
 }

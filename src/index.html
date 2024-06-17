@@ -10,7 +10,11 @@
   <body>
     <header>
       <div>
-        <img src="./img/pexels-shvetsa-sml.jpg" alt="test" />
+        <img 
+        srcset="./img/pexels-shvetsa-lrg.jpg 231w, ./img/pexels-shvetsa-med.jpg 231w, ./img/pexels-shvetsa-sml.jpg 154w" 
+        sizes="(min-width: 720px) 231px, (min-width: 480px) 154px, 100vw" 
+        src="./img/pexels-shvetsa-sml.jpg" 
+        >
         <h1>Ashley Williams</h1>
       </div>
       <section>

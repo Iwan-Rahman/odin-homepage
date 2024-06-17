@@ -56,7 +56,6 @@ header img {
 
 header div {
   position: relative;
-  transform: translate(-1rem, -1rem);
 }
 
 header section {
@@ -205,6 +204,10 @@ address > div:last-child img {
 
 @media screen and (min-width: 480px) {
   /* Header */
+  header div {
+    transform: translate(-1rem, -1rem);
+  }
+  
   header div img {
     width: 32vw;
     height: 40vw;
